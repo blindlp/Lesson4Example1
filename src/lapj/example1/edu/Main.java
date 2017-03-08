@@ -32,6 +32,13 @@ public class Main {
           System.out.println("By from complex syntax");
         };
         objInterfaceThree.doSomething("Regular code in complex syntaxr");
+
+        // reusing the third behavior
+        doSomethingHighOrder(objImplementationTwo);
+    }
+
+    public void doSomethingHighOrder(MyFunctionalInterface behaviour) {
+        behaviour.doSomething("in high order way");
     }
 
 
